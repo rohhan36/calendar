@@ -1,0 +1,83 @@
+@import url("https://fonts.googleapis.com/css2?family=Quicksand:wght@400;700&family=Roboto+Condensed:wght@400;700&display=swap");
+
+* {
+    font-family: "Ubuntu Mono", monospace;
+}
+
+body {
+    background: radial-gradient(hsl(158, 10%, 21%), #1a1f1d);
+    display: flex;
+    height: 100vh;
+    justify-content: center;
+    align-items: center;
+}
+
+.container {
+    width: 500px;
+    height: 470px;
+    background: linear-gradient(10deg, #307e6c, #2b996d);
+    border-radius: 10px;
+    overflow: hidden;
+    -webkit-box-shadow: 10px 10px 59px 10px rgba(0, 0, 0, 0.25);
+    -moz-box-shadow: 10px 10px 59px 10px rgba(0, 0, 0, 0.25);
+    box-shadow: 10px 10px 59px 10px rgba(0, 0, 0, 0.25);
+}
+
+.controlles {
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+    height: 60px;
+    background-color: rgba(0, 0, 0, 0.4);
+}
+
+.days {
+    margin: 10px 0;
+    display: flex;
+    gap: 10px;
+    justify-content: space-around;
+    padding: 0 8px;
+}
+
+.day {
+    text-align: center;
+    width: 50px;
+}
+.dates {
+    margin: 10px;
+    display: grid;
+    width: 480px;
+    grid-template-columns: repeat(7, 1fr);
+    gap: 10px;
+}
+.date {
+    background-color: rgba(0, 0, 0, 0.3);
+    color: white;
+    border-radius: 10px;
+    justify-self: center;
+    align-self: center;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 50px;
+    width: 50px;
+}
+
+.date:nth-child(7n + 1) {
+    color: rgb(255, 76, 76);
+}
+
+button {
+    border: none;
+    border-radius: 5px;
+    padding: 5px 10px;
+    background-color: white;
+}
+
+select {
+    border: none;
+    width: 100px;
+    height: 25px;
+    border-radius: 5px;
+}
